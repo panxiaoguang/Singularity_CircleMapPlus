@@ -44,3 +44,10 @@ make
 cd ..
 apt-get clean
 apt-get autoremove
+
+%labels
+    Author Xiaoguang Pan
+    Version v0.0.5
+    
+%help
+Using github action to build a singularity image for Circle-Map-cpp automaticlly
