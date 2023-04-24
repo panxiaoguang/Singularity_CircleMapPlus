@@ -44,11 +44,11 @@ jobs:
             repo=$(echo "${GITHUB_REPOSITORY/\//-}")
 
             # For each Singularity* container, build based on the prefix (tag) 
-            for recipe in $(ls Singularity*); do
+            for recipe in $(ls CircleMap*); do
                 echo "Building $recipe"
-                tag=$(echo "${recipe/Singularity\./}")
+                tag=$(echo "${recipe/CircleMap\./}")
                 # If we find empty, use latest
-                if [ "$tag" == "Singularity" ]; then
+                if [ "$tag" == "CircleMap" ]; then
                     tag=latest
                 fi
                 # Build the container and name by tag
