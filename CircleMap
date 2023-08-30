@@ -1,5 +1,5 @@
-BootStrap: library
-From: ubuntu:latest
+BootStrap: docker
+From: ubuntu:20.04
 
 %runscript
 # check if there any arguments,
@@ -47,7 +47,7 @@ apt-get autoremove
 
 %labels
     Author Xiaoguang Pan
-    Version v0.0.5
+    Version v0.0.6
     
 %help
 Using github action to build a singularity image for Circle-Map-cpp automaticlly
